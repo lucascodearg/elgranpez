@@ -8,23 +8,26 @@
         <title>El Gran Pez</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <a class="logo__link" href="#">
-                    <img class="logo__img" src="recursos/granpez.png" alt="">
-                </a>
-                <ul>
-                    <li class="nav__item"><a class="nav__link" href="#">INICIO</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">PRODUCTOS</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <p>hola</p>
-        </main>
-        <footer>
+    <header>
+        <div class="nav__container">
+            <a class="logo__link" href="#"><img class="logo__img" src="recursos/granpez.png" alt="Logo El Gran Pez"></a>
+            <button id="nav__button--open" class="nav__button--open" onclick="openNav()">MENU</span>
+        </div>
 
-        </footer>
+        <div id="nav__bar" class="overlay">
+            
+            <a href="javascript:void(0)" id="nav__button--close" class="nav__button" onclick="closeNav()">X</a>
+            <div class="overlay-content">
+                <a class="nav__link" href="#">Inicio</a>
+                <a class="nav__link" href="#">Productos</a>
+                <a class="nav__link" href="#">Contacto</a>
+            </div>
+        </div>
+
+    </header>
+
+    
+
     </body>
+    <script src="js/main.js"></script>
 </html>
