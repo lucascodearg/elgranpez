@@ -19,27 +19,27 @@ body {
 }
 
 .logo__link {
-    height: 90%;
+    max-width: 180px;
+    min-width: 60px;
+    width: 20%;
     margin: 0px 1em;
 }
 
 .logo__img {
-    height: 100%;
+    width: 100%;
 }
 
 .nav__button--open {
-    font-size: 1em;
     color: rgba(255, 136, 0, 0.9);
-    margin: 0px 1em;
-    padding: 2em;
-    font-size: 2em;
+    margin: 0px 20px;
     background-color: black;
+    padding: 10px;
+    font-size: 1em;
     border-radius: 10px;
 }
 
 .nav__button--open:hover {
     background-color: rgb(58, 58, 58);
-
 }
 
 .overlay {
