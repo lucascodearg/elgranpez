@@ -7,10 +7,13 @@ body {
     min-height: 100%;
 }
 
+header {
+    background-image: linear-gradient(#0F2027, #203A43, #2C5364);
+}
+
 .nav__container {
     width: 100%;
     height: 250px;
-    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,24 +24,28 @@ body {
     max-width: 180px;
     min-width: 60px;
     width: 20%;
-    margin: 0px 1em;
+    margin-left: 4em;
 }
 
 .logo__img {
     width: 100%;
 }
 
+.nav__tittle {
+    color: white;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 .nav__button--open {
-    color: rgba(255, 136, 0, 0.9);
-    margin: 0px 20px;
-    background-color: black;
-    padding: 10px;
+    margin-right: 4em;
     font-size: 1em;
-    border-radius: 10px;
+    border: none;
 }
 
 .nav__button--open:hover {
-    background-color: rgb(58, 58, 58);
+    filter: drop-shadow( 0 0 5px #F24E1E);
 }
 
 .overlay {
@@ -54,7 +61,7 @@ body {
 }
 
 .nav__button {
-    color: rgba(255, 136, 0, 0.9);
+    color: #F24E1E;
     text-align: center;
     font-size: 3em;
     text-decoration: none;
@@ -83,5 +90,5 @@ body {
 }
 
 .nav__link:hover {
-    color: rgba(255, 136, 0, 0.9);
+    color: #F24E1E;
 }
