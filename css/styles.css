@@ -13,7 +13,7 @@ header {
 
 .nav__container {
     width: 100%;
-    height: 250px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,9 +21,7 @@ header {
 }
 
 .logo__link {
-    max-width: 180px;
-    min-width: 60px;
-    width: 20%;
+    width: 140px;
     margin-left: 4em;
 }
 
@@ -39,9 +37,7 @@ header {
 
 
 .nav__button--open {
-    margin-right: 4em;
-    font-size: 1em;
-    border: none;
+    margin-right: 2em;
 }
 
 .nav__button--open:hover {
@@ -91,4 +87,18 @@ header {
 
 .nav__link:hover {
     color: #F24E1E;
+}
+
+@media screen and (max-width: 768px) {
+    .logo__link {
+        margin-left: 1em;
+    }
+
+    .nav__button--open {
+        width: 20%;
+    }
+
+    .nav__tittle {
+        display: none;
+    }
 }
