@@ -1,14 +1,27 @@
+/********************************
+            GENÉRICOS
+********************************/
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+/********************************
+        HEADER Y NAV
+********************************/
+
 header {
+    width: 100%;
     background-image: linear-gradient(#0F2027, #203A43, #2C5364);
+    position: fixed;
 }
 
 .nav__container {
@@ -34,9 +47,9 @@ header {
     font-family: 'Roboto', sans-serif;
 }
 
-
 .nav__button--open {
     margin-right: 2em;
+    cursor: pointer;
 }
 
 .nav__button--open:hover {
@@ -50,7 +63,7 @@ header {
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -59,6 +72,7 @@ header {
     position: absolute;
     top: 40px;
     right: 30px;
+    cursor: pointer;
 }
 
 .nav__button:hover {
@@ -109,4 +123,104 @@ header {
         top: 45px;
         right: 30px;
     }
+}
+
+/********************************
+        HOME__CARROUSEL
+********************************/
+.carrousel__container {
+    max-width: 1400px;
+    position: relative;
+    margin: auto;
+}
+
+/* .carrousel__slides {
+    display: none;
+} */
+
+.carrousel__img {
+    width: 100%;
+}
+
+.carrousel__prev, .carrousel__next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.carrousel__next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+.carrousel__prev:hover, .carrousel__next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.carrousel__title {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    text-align: center;
+    color: #F24E1E;
+    font-family: 'Roboto bold', sans-serif;
+    font-size: 30px;
+    padding: 8px 12px;
+}
+
+.carrousel__caption {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 50%;
+    width: 25%;
+    text-align: center;
+}
+
+.caption--right {
+    right: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #ffac92;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover, .active {
+    background-color: #F24E1E;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/********************************
+            FOOTER
+********************************/
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #0F2027;
 }

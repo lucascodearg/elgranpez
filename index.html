@@ -34,11 +34,50 @@
 
     </header>
     <main>
-        <h1>este es un titulo de prueba
-        </h1>
+        <div class="carrousel__container">
+            <div class="carrousel__slides">
+                <div class="carrousel__title">COPAS DE CHAMPANGE</div>
+                <img src="recursos/portadas/carrousel_1.png" alt="copas de champange" class="carrousel__img">
+                <div class="carrousel__caption caption--right">
+                    <p>Conocé nuestras ofertas</p>
+                    <p>en todas las medidas</p>
+                    <p>disponibles</p>
+                </div>
+            </div>
+
+            <div class="carrousel__slides">
+                <div class="carrousel__title">JUEGO DE VAJILLA</div>
+                <img src="recursos/portadas/carrousel_2.png" alt="juego de vajilla" class="carrousel__img">
+                <div class="carrousel__caption caption--left">
+                    <p>Conocé nuestras ofertas</p>
+                    <p>en todas las medidas</p>
+                    <p>disponibles</p>
+                </div>
+            </div>
+
+            <div class="carrousel__slides">
+                <div class="carrousel__title">JUEGO DE TAZAS</div>
+                <img src="recursos/portadas/carrousel_3.png" alt="juego de tazas" class="carrousel__img">
+                <div class="carrousel__caption caption--right">
+                    <p>Conocé nuestras ofertas</p>
+                    <p>en todas las medidas</p>
+                    <p>disponibles</p>
+                </div>
+            </div>
+
+            <a class="carrousel__prev" id="buttonPrev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="carrousel__next" id="buttonNext" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
     </main>
     <footer>
-
+        <h3>Contacto</h3>
+        <a href="#"><p>Ubicación</p></a>
     </footer>
     
 
